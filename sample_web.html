@@ -5,287 +5,311 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample website</title>
+    <title>website sample</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: rgb(239, 219, 132);
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: 'century gothic', arial, sans-serif;
+            color: #000;
         }
 
         .main {
-            width: 80%;
-            height: max-content;
-            margin-top: 2em;
-            margin-inline: auto;
-            -webkit-box-shadow: 0px 0px 3px 1px gray;
-            box-shadow: 0px 0px 3px 1px gray;
-            margin-bottom: 0.5em;
-        }
-
-        .heading {
-            width: 100%;
-            height: 9em;
-            background-color: #9ACD32;
-        }
-
-        .text {
-            float: right;
-            margin-right: 2em;
-        }
-
-        .text h1 {
-            margin: 1em 3em 0em 0em;
-            padding: 0;
-            font-size: 25pt;
-            font-weight: 500;
-        }
-
-        .text p {
-            margin: 0;
-            font-size: 14pt;
-        }
-
-        .midpart {
-            width: 100%;
-            height: max-content;
-            background-color: rgb(241, 228, 212);
-            border: 1px solid transparent;
+            width: auto;
+            height: auto;
+            background-color: #323534;
         }
 
         .navbar {
-            width: 95%;
-            height: 3em;
-            margin-top: 1em;
-            background-color: #F5F5DC;
-
+            width: 70%;
+            height: 2em;
+            background-color: #323534;
             margin-inline: auto;
-            -webkit-box-shadow: -1px -2px 7px 0px #000000;
-            box-shadow: -1px -2px 7px 0px #000000;
+            margin-top: 0em;
         }
 
-        .navbar ul,
-        li {
-            float: left;
+        .navbar ul {
             list-style: none;
-            line-height: 1em;
-            font-weight: 600;
-
-        }
-
-        .navbar a {
-            text-decoration: none;
-            padding: 3em;
-            color: black;
-        }
-
-        .left-1,
-        .left-2 {
-            width: 20%;
-            height: 300px;
-            border: 1px solid transparent;
-            background-color: rgb(235, 225, 200);
-            margin-left: 0.5em;
-            margin-top: 2em;
-
-        }
-
-        .gallary {
-            width: 75%;
             float: right;
-            margin: 0;
-            padding-left: 1em;
-            margin-top: -39.6em;
-            border-left: 1px solid gray;
-            background-color: rgb(235, 225, 200);
         }
 
-        .gallary h3 {
-            font-size: 22pt;
-            margin-top: 0.8em;
+        .navbar li {
+            float: left;
+            margin: 0em 0.2em 0em 0em;
+            line-height: 2em;
         }
 
-        .gallary p {
-            line-height: 1.5em;
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 35px 6px 28px;
+            background: #5A5A5A; 
+            border: 1px solid transparent;
+            border-top-left-radius:15px;
+            border-top-right-radius: 15px;
         }
 
-        .buttom {
+        nav a:hover {
+            cursor: pointer;
+            color: #E4EC04;
+            transition: 500ms ease-in-out;
+        }
+
+        .header {
+            width: 70%;
+            margin-inline: auto;
+            padding: 2em;
+            background-color: #323534;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 28pt;
+            font-weight: 100;
+        }
+
+        span {
+            color: #E4EC04;
+        }
+
+        .header p {
+            color: #999;
+        }
+
+        .hori {
+            width: 100%;
+            height: 0.3em;
+            background-color: rgb(96, 144, 23);
+
+        }
+
+        .second {
+            width: 70%;
+            margin-inline: auto;
+        }
+
+        .image-container {
+
+            width: 100%;
+            height: 13em;
+            margin-inline: auto;
+            margin-top: 2em;
+            border: 10px solid #DDD;
+            margin-bottom: 20px;
+            background-image: url('banner.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .hole{
+            width: 100%;       
             display: flex;
-            width: 98%;
-            padding-left: 1em;
+            justify-content:space-between;
             gap: 5%;
         }
-
-
-        svg {
-            width: 20px;
-            height: 20px;
-            padding-right: 0.2em;
+        .contain{
+            width: 70%;
+            height: max-content;
+            text-align: left;
         }
-
-        .menuhead {
-            width: 100%;
-            height: 50px;
-            background-color: rgb(178, 186, 37);
-            text-align: center;
-            padding-top: 1em;
-
+        .second h1 {
+            color: #000;
+            margin: 0 0 15px 0;
+            padding: 15px 0 5px 0;
+            font-family: 'century gothic', arial;
+            font-weight: 100;
+            font-size: normal;
         }
-
-        .menuhead h2 {
+        p{
+            padding: 0 0 20px 0;
+            line-height: 1.7em;
+            
+        }
+        .second h2{
+            font-size: normal;
+            padding: 9px 0 5px 0;
+            color: #009FBC;
+            margin: 0px 0px 15px 0px;
+        }
+       
+        .second ul li{
+            color: #555555;
+            padding: 0px 0px 4px 25px;
+            line-height:2em;
             margin: 0;
-            padding: 0;
+            text-align: left;
+            list-style-position: inside;
         }
-
-        .menuhead-para,
-        .menuhead-para-1 {
-            padding: 1em;
+        .second ul li::marker{
+            color: #009FBC;
         }
-
-        .menuhead-para-1 {
-            margin-top: 0;
-            padding-top: 0;
+        .sidebar-container{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
         }
-
-        .link li {
-            list-style-type: square;
-
+        .sidebar-top, .sidebar-medium,.sidebar-last{
+            width: 100%;
+            height:auto;
+            border: 1px solid rgb(205, 189, 189);
+            border-radius: 5%;
+            padding: 1.5em 1em;
+            margin-bottom: 1.5em;
         }
-
-        .link li {
-            margin: 0.3em;
+        a, a:hover{
+            text-decoration: underline;
+            color: #AEB002;
         }
-
-        .link a {
-            color: gray;
+         .active{
+            background-color: #AEB002;
         }
-
-        button {
-            padding: 0.5em 0.6em;
-            background-color: #80b318;
-            border: 1px solid transparent;
+        h3{
+            font-size: normal;
+            font-weight: 200;
+            padding-bottom: 0.8em;
+        }
+        h4{
+            color: #009FBC;
+            padding-top: 0.3em;
+        }
+        h5,h6{
+            color: #888;
+            font: normal;
+            letter-spacing: normal;
+            padding: 5px 0 15px 0;
+        }
+        .sidebar-medium ul li{
+            padding-left: 1em;
+            list-style-position: inside;
+        }
+        input{
+            padding: 0.6em;
+            border: 1px solid gray;
             border-radius: 5px;
-            cursor: pointer;
+        }
+        .sidebar-last img{
+            width: auto;
+            height: 25px;
+            margin-left: 6px;
+            padding-bottom: 0;
+            margin-bottom: 0;
         }
         footer{
+            background-color:#323534;
             width: 100%;
-            height: 3em;
-            background-color: #9ACD32;
-            margin-bottom: 0.5em;
-        }
-        footer p{
-            font-size: 14pt;
+            height: 6em;
             text-align: center;
-            padding-top: 1em;
         }
+        footer a, .ftext {
+              color: #A8AA94;
+              text-decoration: none;
+              margin:0;
+              padding:1em 0em 0em 0em;
+          }
+          footer p:nth-child(2){
+              padding: 0;
+          }
     </style>
 </head>
 
 <body>
-    <div class="main">
-        <header class="heading">
-            <div class="text">
-                <h1>Enter Site Title</h1>
-                <p>Enter Site Slogan</p>
-            </div>
-        </header>
-        <section class="midpart">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">New Page</a></li>
-                    <li><a href="#">New Page 2</a></li>
-                    <li><a href="#">New Page 3</a></li>
-                    <li><a href="#">New Page 4</a></li>
-                    <li><a href="#">New Page 5</a></li>
-                </ul>
-            </nav>
-            <aside class="left-1">
-                <div class="menuhead">
-                    <h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
-                        </svg>
-                        Main Menu
-                    </h2>
-                </div>
-                <div class="link">
-                    <ul>
-                        <li><a href="#">Menu Item 1</a></li>
-                        <li><a href="#">Menu Item 2</a></li>
-                        <li><a href="#">Menu Item 3</a></li>
-                        <li><a href="#">Menu Item 4</a></li>
-                        <li><a href="#">Menu Item 5</a></li>
-                        <li><a href="#">Menu Item 6</a></li>
-                        <li><a href="#">Menu Item 7</a></li>
-                        <li><a href="#">Menu Item 8</a></li>
-                    </ul>
-                </div>
-            </aside>
-            <aside class="left-2">
-                <div class="menuhead">
-                    <h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
-                        </svg>
-                        Block
-                    </h2>
-                </div>
-                <p class="menuhead-para">Enter Block content here...</p>
-                <p class="menuhead-para-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo veniam ipsum
-                    dolorum, placeat dolorem
-                    animi esse hic excepturi asperiores molestias.</p>
-            </aside>
-            <div class="gallary">
-                <h3>Gallery</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rerum nemo, temporibus magni minus
-                    perferendis quis est quaerat? Architecto asperiores error fugiat veniam voluptatum itaque fugit, ad
-                    sapiente eligendi nobis quas atque voluptas delectus, hic, ratione dicta porro? Nesciunt numquam
-                    architecto delectus quidem sed, accusantium, doloribus accusamus sint velit nostrum esse! Adipisci
-                    praesentium, delectus sunt distinctio officiis quibusdam, ullam magnam laudantium cumque maxime
-                    cupiditate excepturi error vel! Voluptates, a. Beatae quia eos eligendi ex corporis esse
-                    perferendis, repellat quis expedita assumenda qui id voluptas aliquam veniam voluptatibus accusamus
-                    blanditiis aperiam! Consectetur voluptas, neque officia esse animi ex voluptates eius doloribus
-                    incidunt ratione necessitatibus eum exercitationem vero excepturi totam asperiores quae explicabo
-                    ab in? Ducimus cumque asperiores nobis consequatur.</p>
-                <div class="buttom">
-                    <div class="sub">
-                        <h3>Subscription</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, neque, in officia
-                            consequatur
-                            veritatis sit facere obcaecati doloribus corporis saepe voluptatem odit sunt quo qui
-                            officiis
-                            placeat culpa eius? Eligendi nesciunt quo recusandae doloremque facilis labore et qui, eos
-                            aliquid
-                            architecto quas officiis dolore soluta neque nobis. Inventore, omnis pariatur.</p>
-                        <button>Read More</button>
-                    </div>
-                    <hr>
-                    <div class="other">
-                        <h3>Other Services</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam fuga mollitia quae dolorum,
-                            modi
-                            impedit nesciunt ut culpa necessitatibus architecto ipsa nam quia deserunt sed laborum
-                            exercitationem temporibus esse et! Repudiandae nemo praesentium excepturi assumenda ullam
-                            reiciendis
-                            aperiam doloremque totam asperiores optio omnis suscipit vitae, voluptatem eos ab, porro a?
-                        </p>
-                        <button>Read More</button>
-                    </div>
-                </div>
-            </div>
-            <footer>
-                <p>Copyright @ 2014.</p>
-            </footer>
+    <section class="main">
+        <div class="header">
+
+            <h1>simple <span>style_banner</span></h1>
+            <p>Simple. Contemporary.Website Template.</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="sample_web.html">New Page 1</a></li>
+                <li><a href="page_2.html">New Page 2</a></li>
+                <li><a href="#">New Page 3</a></li>
+                <li> <a href="#">New Page 4</a></li>
+            </ul>
+        </nav>
+        <div class="hori">
+
+        </div>
+    </section>
+    <section class="second">
+
+        <div class="image-container">
+        </div>
+        <div class="hole">
+         <div class="contain">
+         <h1>Welcome to the simplestyle_banner template</h1>
+        <p>
+            This standards compliant, simple, fixed width website template is released as an 'open source' design (under
+            a <a href="#">Creative Commons Attribution 3.0 Licence</a>), which means that you are free to download and use it for
+            anything you want (including modifying and amending it). All I ask is that you leave the 'design from
+            HTML5webtemplates.co.uk' link in the footer of the template, but other than that...
+            <br><br>
+            This template is written entirely in HTML5 and CSS, and can be validated using the links in the footer.
+            <br><br>
+            You can view more free HTML5 web templates <a href="#"> here.</a>
+            <br><br>
+            This template is a fully functional 5 page website, with an <a href="#">examples</a> page that gives examples of all the
+            styles available with this design.
+        </p>
+          <h2>Browser Compatibility</h2>
+          <p>This template has been tested in the following browser:</p>
+          <ul>
+              <li>Internet Explorer 9</li>
+              <li>FireFox 25</li>
+              <li>Google Chrome 31</li>
+          </ul>
+        </div> 
+        <div class="sidebar-container">
+        <div class="sidebar-top">
+            <h3>Latest News</h3>
+            <h4>NEW WEBSITE LAUNCHED</h4>
+            <h5>February 1st, 2014</h5>
+            <p>2014 sees the redesign of our website. Take a look around and let us know what you think. </p>
+            <a href="#">Read more</a>
+        </div>
+        <div class="sidebar-medium">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+                <li><a href="#">link 4</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-last">
+            <h3>Search</h3>
+            <input type="text" id="search" placeholder="Enter Keywords....">
+           <label for="search"><img src="https://iconarchive.com/download/i60242/zerode/plump/Search.ico" alt=""></label> 
+           </div>
+    </div> 
+    </div>
+    </section>
+    <div class="hori">
 
     </div>
-
+    <footer>
+        <p class="ftext">
+            <a href="#">Home</a>
+            |
+            <a href="#">Example</a>
+            |
+            <a href="#">A Page</a>
+            |
+            <a href="#">Another Page</a>
+            |
+            <a href="#">Contact Us</a>
+        </p>
+        <p class="ftext">
+            "Copyright @ simplestyle_banner |"
+            <a href="#">HTML5</a>
+            "|"
+            <a href="#">CSS</a>
+            "|"
+            <a href="#">design from HTML5webtemplates.co.uk</a>
+        </p>
+    </footer>
 </body>
 
 </html>
